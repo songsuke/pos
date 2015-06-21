@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'therubyracer'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -31,9 +33,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'bootstrap-sass', '~> 3.3.5'
 gem 'shopify_api'
 gem 'pg'
+gem 'activerecord-postgresql-adapter'
+gem "nokogiri"
+gem 'haml'
+group :assets do
+	gem 'bootstrap-sass'
+
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
